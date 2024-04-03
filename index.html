@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Yas, Queen! | Profiles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Lucas Araujo">
+  <meta name="description" content="Yas, Queen! | Your source for all things drag!">
+  <meta name="keywords" content="yas queen drag queens queer rupaul drag race">
+  <!--link to Google Fonts API-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital@0;1&family=Nunito:wght@800;900;1000&display=swap" rel="stylesheet">
+  <!--link to external CSS stylesheet-->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="#" id="logo">
+      <img src="img/logo.png" alt="Yas, Queen!">
+    </a>
+    <h1>Your source for all things drag!</h1>
+  </header>
+  <div class="container-wrapper">
+    <div class="filters">
+      <!-- Search by name dropdown -->
+      <label for="searchByNameDropdown">Choose your Queen:</label>
+      <select id="searchByNameDropdown">
+        <option value="">All Queens</option>
+      </select>
+      <br><br>
+      <!-- Search by name -->
+      <label for="searchByName">Search by Name:</label>
+      <input type="text" id="searchByName" placeholder="Enter name...">
+      <br><br>
+      <!-- Search by season -->
+      <label for="searchBySeason">Search by Season:</label>
+      <select id="searchBySeason">
+        <option value="">All Seasons</option>
+      </select>
+      <br><br>
+      <!-- Search by state -->
+      <label for="searchByState">Search by State:</label>
+      <select id="searchByState">
+        <option value="">All States</option>
+      </select>
+      <br><br>
+      <div id="totalDragQueenCount"></div>
+    </div>
+    
+    <div class="container" id="dragQueensContainer">
+      <!-- Drag queens will be dynamically added here -->
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Yas, Queen! All rights reserved.</p>
+  </footer>
+
+  <script src="dragqueen.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
